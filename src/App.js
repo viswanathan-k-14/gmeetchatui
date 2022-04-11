@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ChatBox from './components/ChatBox.jsx';
 import './App.css';
 
 function App() {
   const [chats, setChats] = useState([]);
-
-  useEffect(() => {
-    formatAMPM(new Date());
-    console.log('dfggdfg');
-  }, []);
 
   function formatAMPM(date) {
     var hours = date.getHours();
